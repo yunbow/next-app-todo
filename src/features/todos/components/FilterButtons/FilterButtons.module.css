@@ -1,0 +1,11 @@
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: var(--spacing);
+}
+
+.filterButton {
+  padding: 5px 10px;
+  font-size: 14px;
+}

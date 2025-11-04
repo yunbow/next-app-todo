@@ -1,0 +1,43 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-primary) 90%, black);
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted-foreground);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: var(--color-ring);
+  color: var(--color-ring);
+}
+
+.danger {
+  background-color: var(--color-destructive);
+  color: var(--color-destructive-foreground);
+}
+
+.danger:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-destructive) 90%, black);
+}

@@ -1,0 +1,12 @@
+.taskForm {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input {
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+.button {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
